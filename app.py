@@ -1,7 +1,7 @@
 #nuber guesser
 import random
 
-score = 0 
+attempts = 0 
 
 print("I am thinking of a number from 1 through 100!\n\nIf it's too high, or too low I will tell you.\n\nCan you guess it?\n")
 
@@ -14,12 +14,16 @@ while True:
     
     if guessNumber < randomNumber:
         print("Too Low!")
-        score = score + 1
+        attempts = attempts + 1
+
     if guessNumber > randomNumber:
         print("Too High!")
-        score = score + 1
+        attempts = attempts + 1
+
     if guessNumber == randomNumber:
         print("You Won!\n")
-        score = str(score)
-        print("It took you " + score + " attemps! God you're pathetic.\n\n")
+        attempts = str(attempts)
+
+        print("It took you " + attempts + " attemps! God you're pathetic.\n\n")
+        break
         
