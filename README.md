@@ -1,2 +1,2 @@
 # numberguesser
-A simple number guesser.
+A simple commqnd line number guesser.
